@@ -8,12 +8,6 @@ pip install --upgrade pip
 
 pip3 install akad
 
-pip3 install rsa
-
-pip3 install requests
-
-pip3 install bs4
-
 pip3 install humanize
 
 git clone https://github.com/nenesan/RollChan
