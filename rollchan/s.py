@@ -20,7 +20,7 @@ line://nv/settings/privacy
 line://nv/connectedDevices"""
 
 
-APP = 'WIN10\t5.5.5\tShiro-NeNe\t11.3.4'
+APP = '' #แก้ WIN10 ใช้งานไม่ได้
 shi = LINE(appName=APP)
 #shi.sendMessage("u68974d03060e115360852c149d37f000", f"{shi.profile.displayName} ล็อกอินเข้าสู่ระบบเสร็จสิ้น \n\nSelfBotName : 🌸RollChan🌸\nSelfBotType : บอททั่วไป/เกม\n"+login)
 shi.sendMessage("u56fc52f1c41573793635b3b1bbca2405","กรุณากดยินยอมการใช้งานในลิงค์นี้\nline://app/1602687308-GXq4Vvk9")
