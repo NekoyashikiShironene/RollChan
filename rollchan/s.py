@@ -203,11 +203,10 @@ def status(op):
                 shi.sendReplyMessage(msg.id, msg.to, '🌸สเตตัสที่กำลังใช้งาน🌸 : \n' + shi.profile.statusMessage)
             elif text.lower() == '/mypic':
                 me = shi.getContact(lineMID)
-                me.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + shi.pictureStatus)
+                me.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + me.pictureStatus)
             elif text.lower() == '/mycover':
-                me = shi.getContact(lineMID)
                 cover = shi.getProfileCoverURL(lineMID)
-                me.sendImageWithURL(msg.to, cover)
+                shi.sendImageWithURL(msg.to, cover)
             elif text.lower() == '/gcreator':
                     group = shi.getGroup(msg.to)
                     GS = group.creator.mid
