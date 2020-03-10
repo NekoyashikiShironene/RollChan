@@ -1056,7 +1056,8 @@ def status(op):
     except Exception as e:
          print(e)
 
-while True:
+def run():
+  while True:
     try:
         ops = oepoll.singleTrace(count=50)
         if ops is not None:
@@ -1065,3 +1066,6 @@ while True:
                 oepoll.setRevision(op.revision)
     except Exception as e:
         print(e)
+
+if __name__ == "__main__":
+   run()
